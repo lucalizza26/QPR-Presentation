@@ -48,10 +48,10 @@ ax.axvline(0,    color=RED,   lw=5, zorder=4)                      # MLE = 0
 ax.axvline(mean, color=NAVY,  lw=2.5, zorder=4)                    # posterior mean
 
 # annotations
-ax.text(0.015 * XMAX, y.max() * 0.93, f"posterior mean\n≈ {mean:.0f} FIT",
+ax.text(0.27 * XMAX, y.max() * 0.8, f"posterior mean\n≈ {mean:.0f} FIT",
         color=NAVY, fontsize=13, fontweight="bold", va="top")
-ax.text(0.30 * XMAX, y.max() * 0.93,
-        "Frequentist MLE\n$\\hat{\\lambda} = 0/T = 0$\n→ R = 100%  (?)",
+ax.text(0.015 * XMAX, y.max() * 0.2,
+        "Frequentist\n$\\hat{\\lambda} = 0/T = 0$\n→ R = 100% (?)",
         color=RED, fontsize=13, fontweight="bold", va="top")
 
 ax.set_title("Zero failures ≠ zero failure rate")
